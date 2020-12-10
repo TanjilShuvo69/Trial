@@ -1,0 +1,1052 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    cursor: default;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932))
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 5.3rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+h5 {
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+h6 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+a {
+    font-family: "Montserrat Alternates", sans-serif;
+    letter-spacing: .02em;
+    line-height: 1.4
+}
+
+b,
+strong {
+    font-family: Montserrat, sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+span {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: .02em
+}
+
+section {
+    padding: 1% 0
+}
+
+.row {
+    width: 100rem;
+    margin: 0 auto
+}
+
+.btn {
+    color: #fffdfd;
+    background: #10b98f;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    line-height: 1.4;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: .2rem solid #10b98f;
+    outline: 0;
+    border-radius: .5rem;
+    transition: all .3s
+}
+
+.btnHover:hover {
+    background: 0 0;
+    border: .2rem solid #10b98f;
+    color: #10b98f
+}
+
+.btnTp {
+    color: #10b98f;
+    background: 0 0;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    line-height: 1.4;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: .2rem solid #10b98f;
+    outline: 0;
+    border-radius: .5rem;
+    transition: all .3s
+}
+
+.btnTp:hover {
+    background: #10b98f;
+    color: #fffdfd
+}
+
+.btnArrow {
+    color: #fff;
+    background: #10b98f;
+    border: none;
+    outline: 0;
+    border: .1rem solid #10b98f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    transition: all .3s;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0
+}
+
+.showBtnArrow {
+    opacity: 1 !important
+}
+
+.btnArrow:hover {
+    color: #10b98f;
+    background: 0 0;
+    border: .1rem solid #10b98f
+}
+
+.activeLink {
+    color: #10b98f !important
+}
+
+h2:after {
+    content: "";
+    width: 6rem;
+    height: .3rem;
+    position: absolute;
+    left: 49%;
+    background: #10b98f;
+    top: 105%;
+    transform: translate(-49%, -105%);
+    border-radius: 10rem
+}
+
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #10b98f;
+    visibility: hidden;
+    z-index: 99999;
+    animation: closePreloader 3s
+}
+
+@keyframes closePreloader {
+    0% {
+        visibility: visible
+    }
+
+    100% {
+        visibility: hidden
+    }
+}
+
+.dots .dot {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 1px 0 1px;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-animation: dot-dot-dot 1s linear infinite;
+    animation: dot-dot-dot 1s linear infinite
+}
+
+.dots .dot:nth-child(2) {
+    animation-delay: .2s
+}
+
+.dots .dot:nth-child(3) {
+    animation-delay: .4s
+}
+
+@keyframes dot-dot-dot {
+
+    0%,
+    100%,
+    60% {
+        -webkit-transform: initial;
+        -ms-transform: initial;
+        transform: initial
+    }
+
+    30% {
+        -webkit-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+        transform: translateY(-25px)
+    }
+}
+
+/* horizontal scroll bar */
+.scrollBar {
+    position: fixed;
+    top: 95vh;
+    height: 2px;
+    width: 0%;
+    background: goldenrod;
+    -webkit-transition: width 200ms ease;
+    transition: width 200ms ease;
+    text-align: right;
+    color: #fff;
+}
+
+.scrollBar span {
+    position: absolute;
+    top: -23px;
+    right: 15px;
+    font-size: 0.7em;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+
+.scrollBar span::after {
+    content: "%";
+    font-size: 0.8em;
+    position: absolute;
+    right: -15px;
+    bottom: 4px;
+    font-weight: 700;
+    opacity: 0.4;
+}
+
+/* vertical scroll bar */
+.scrollBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2%;
+    width: 0rem;
+    background: #10b98f;
+    -webkit-transition: height 200ms ease;
+    transition: height 200ms ease;
+    text-align: left;
+    color: #fff;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 1rem;
+    z-index: 999;
+}
+
+.scrollBar span {
+    position: absolute;
+    bottom: 3px;
+    left: 2px;
+    font-size: 0.7em;
+    font-weight: 500;
+    display: inline-block;
+    text-align: left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom left;
+}
+
+.scrollBar span::after {
+    content: "%";
+    font-size: 0.8em;
+    position: absolute;
+    right: -15px;
+    bottom: 4px;
+    font-weight: 700;
+    opacity: 0.4;
+}
+
+
+.burgerMenu {
+    display: none
+}
+
+.burgerMenu .mobileNavs {
+    width: 80%;
+    height: 6rem;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.mobileNavs i {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.5rem;
+    color: #10b98f;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.mblMenu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: grid;
+    list-style-type: none;
+    transition: all .7s;
+    background: #00000e;
+    opacity: 0
+}
+
+.showMblMenu {
+    height: 30rem !important;
+    opacity: 1
+}
+
+.burgerMenu ul li {
+    padding: 2% 0;
+    margin-left: 1%
+}
+
+.burgerMenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.burgerMenu ul li a:hover {
+    color: #10b98f
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: 0 0
+}
+
+.headerSection {
+    width: 100%;
+    height: auto;
+    padding-bottom: 12%;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url(../img/photo-of-designer-creating-a-website.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.navBar {
+    width: 100%;
+    height: 6rem
+}
+
+.logo {
+    width: 20%;
+    float: left
+}
+
+.logo span {
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: .2rem solid #10b98f
+}
+
+.logo span a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    font-family: Poppins, sans-serif
+}
+
+.menuContainer {
+    width: 55%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    float: right
+}
+
+.menuContainer ul.navLinks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none
+}
+
+.navLinks li a {
+    color: #fffdfd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.navLinks li a:hover {
+    color: #10b98f
+}
+
+.navLinks li:last-child a {
+    border: .2rem solid #10b98f;
+    border-radius: 100rem;
+    padding: 1rem 2rem
+}
+
+.navLinks li:last-child a:hover {
+    background: #10b98f;
+    color: #fffdfd
+}
+
+.heroContainer h1 {
+    width: 100%;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-top: 8%;
+    margin-bottom: 1%
+}
+
+.heroContainer p {
+    width: 50%;
+    text-align: left;
+    line-height: 1.4;
+    margin: 0 0;
+    margin-bottom: 3%
+}
+
+.heroContainer b {
+    font-size: 1.9rem;
+    font-weight: 600
+}
+
+.btnHero {
+    font-family: "Montserrat Alternates", sans-serif
+}
+
+.btnHero a {
+    text-decoration: none;
+    color: #fff
+}
+
+.btnHero:hover a {
+    color: #10b98f
+}
+
+.serviceSection {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url(../img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.serviceTitleDes h2 {
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin: 2% 0
+}
+
+.serviceTitleDes p {
+    margin: auto;
+    text-align: center;
+    width: 40%
+}
+
+.serviceBox {
+    text-align: center
+}
+
+.serviceBox:nth-child(4) {
+    margin-left: 0
+}
+
+.serviceBox i {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.5rem;
+    background: #10b98f;
+    border: .2rem solid #10b98f;
+    border-radius: 50%;
+    margin: 2% auto;
+    transition: all .3s
+}
+
+.serviceBox i:hover {
+    background: 0 0;
+    border: .2rem solid #10b98f;
+    color: #fff
+}
+
+.serviceBox h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2% 0
+}
+
+.serviceBox p {
+    font-size: 1.3rem;
+    margin: 2% 0
+}
+
+.skillSection {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url(../img/testimonial-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.skillTitleDes h2 {
+    position: relative;
+    text-transform: capitalize;
+    margin: 3% 0;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.skillTitleDes p {
+    margin: 3% 0;
+    text-align: center
+}
+
+.skillBox1 {
+    margin-left: 50% !important;
+    transform: translateX(-50%)
+}
+
+.percent {
+    float: right
+}
+
+.demo {
+    margin: 2% 0;
+    border-radius: .5rem
+}
+
+.sb_bar {
+    border-radius: .5rem
+}
+
+.priceSection {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url(../img/g876Ek.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.priceTitleDes h2 {
+    position: relative;
+    text-transform: capitalize;
+    text-align: center
+}
+
+.priceTitleDes p {
+    text-align: center;
+    margin: 2% 0;
+    text-transform: capitalize
+}
+
+.priceContainer {
+    text-align: center
+}
+
+.priceBox {
+    background: #fff;
+    border-radius: .5rem;
+    color: #000;
+    height: auto;
+    padding: 1%
+}
+
+.priceBox:nth-child(2) {
+    border: .4rem solid #10b98f
+}
+
+.priceBox h4 {
+    text-transform: capitalize;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 4% 0;
+    margin-top: 10%;
+    color: #000
+}
+
+.priceBox span {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 5% 0;
+    color: #000
+}
+
+.priceBox h5 {
+    margin: 3% 0;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000
+}
+
+.priceBox ul {
+    list-style-type: none;
+    margin: 10% 0
+}
+
+.priceBox ul li {
+    font-size: 1.5rem;
+    margin: 3% 0;
+    font-family: "Montserrat Alternates", sans-serif
+}
+
+.btnPrice {
+    margin-bottom: 10%
+}
+
+.btnPrice a {
+    text-decoration: none;
+    color: #fff
+}
+
+.btnPrice:hover a {
+    color: #10b98f
+}
+
+.btnTp a {
+    color: #10b98f
+}
+
+.btnTp:hover a {
+    color: #fff
+}
+
+.activePort {
+    background: #10b98f;
+    color: #fff
+}
+
+.activePort:hover {
+    background: 0 0 !important;
+    color: #fff !important
+}
+
+.aboutNav {
+    margin-bottom: 8%
+}
+
+.aboutMeSection {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url(../img/laptopwork.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.aboutMeSection h2 {
+    position: relative;
+    text-transform: capitalize;
+    margin: 4% 0;
+    text-align: center
+}
+
+.aboutBox:first-child {
+    text-align: center
+}
+
+.aboutBox img {
+    max-width: 50%;
+    margin: auto;
+    transform: translateY(-15%)
+}
+
+.aboutBox:first-child {
+    overflow: hidden
+}
+
+.aboutBox:last-child h5 {
+    font-family: "Work Sans", sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+.aboutBox ul {
+    width: 40%;
+    margin: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none
+}
+
+.aboutBox ul li a {
+    color: #fff;
+    text-decoration: none
+}
+
+.aboutBox ul li a i {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    background: #10b98f;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.aboutBox ul li:nth-child(1) a i {
+    background: #3a6bb1
+}
+
+.aboutBox ul li:nth-child(1):hover a i {
+    background: #fff;
+    color: #000
+}
+
+.aboutBox ul li:nth-child(2) a i {
+    background: #0ec8f5
+}
+
+.aboutBox ul li:nth-child(2):hover a i {
+    background: #fff;
+    color: #000
+}
+
+.aboutBox ul li:nth-child(3) a i {
+    background: #3f729b
+}
+
+.aboutBox ul li:nth-child(3):hover a i {
+    background: #fff;
+    color: #000
+}
+
+.aboutBox ul li:nth-child(4) a i {
+    background: #24292e
+}
+
+.aboutBox ul li:nth-child(4):hover a i {
+    background: #fff;
+    color: #000
+}
+
+.aboutBox ul li:nth-child(5) a i {
+    background: #f2623b
+}
+
+.aboutBox ul li:nth-child(5):hover a i {
+    background: #fff;
+    color: #000
+}
+
+.contactHeader,
+.portHeader {
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    text-transform: uppercase
+}
+
+.contactHeader h3,
+.portHeader h3 {
+    font-weight: 700
+}
+
+.formSection {
+    width: 100%;
+    height: auto;
+    padding: 4% 0 5% 0;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url(../img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.formHeader h2 {
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+    margin: 3% 0
+}
+
+.formContainer {
+    width: 100%;
+    height: auto;
+}
+
+.formContainer form input[type="name"],
+.formContainer form input[type="email"],
+.formContainer form textarea {
+    width: 45%;
+    display: block;
+    padding: 1rem 5rem 1rem 1rem;
+    margin: 1% auto;
+    background: #ffffff14;
+    color: #fff;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+.formContainer form textarea {
+    margin-bottom: 2%;
+}
+
+.formContainer form input::placeholder,
+.formContainer form input::placeholder,
+.formContainer form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.formContainer form input.btn {
+    display: block;
+    margin: auto;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.mapSection {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url(../img/skill-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.mapDetails {
+    width: 100%;
+    height: auto
+}
+
+.mapDetails h2 {
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+    margin: 3% 0
+}
+
+.mapDetails .col1:nth-child(3) {
+    margin-left: 0
+}
+
+.mapDetails .col1 i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #10b98f;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    border: .1rem solid #10b98f;
+    border-radius: 50%;
+    background: 0 0;
+    margin: auto;
+    margin-bottom: 5%;
+    transition: all .3s;
+    cursor: pointer
+}
+
+.mapDetails .col1 i:hover {
+    background: #10b98f;
+    color: #fff
+}
+
+.mapDetails .col1 p {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.8
+}
+
+.mapBox {
+    margin-top: 20%;
+    margin-bottom: 5%
+}
+
+.portSection {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, .932), rgba(0, 0, 0, .932)), url('../img/1\ OlgqUIhvl5-9dZISlZ2-yQ.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+.portTitleDes h2 {
+    position: relative;
+    text-align: center;
+    margin: 2% 0
+}
+
+.portTitleDes p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 2% auto;
+    width: 60%
+}
+
+.portContainer .col1:nth-child(3) {
+    margin-left: 0
+}
+
+.portContainer .col1 img {
+    max-width: 100%
+}
+
+.portContainer .col1 .imgHover {
+    margin: 3% 0;
+    margin-bottom: 6%;
+    text-align: center;
+    font-size: 1.4rem
+}
+
+.portContainer .col1 .imgHover a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffff;
+    position: absolute;
+    font-family: Poppins, sans-serif
+}
+
+.footerSection {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0
+}
+
+hr {
+    border: .1rem solid #444
+}
+
+.footerSection .row {
+    text-align: center
+}
+
+.footerSection .row span {
+    font-family: Poppins, sans-serif
+}
+
+.footerSection .row b {
+    font-size: 1.7rem
+}
